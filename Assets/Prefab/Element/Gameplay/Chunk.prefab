@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 7974667600526281761}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: IsGrounded
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 2732405783396576764}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: IsGrounded
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

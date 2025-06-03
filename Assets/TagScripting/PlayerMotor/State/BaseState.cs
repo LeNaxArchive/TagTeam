@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseState : MonoBehaviour
+public abstract class BaseState : MonoBehaviour
 {
     protected PlayerMotor motor;
     public virtual void Construct(){ }

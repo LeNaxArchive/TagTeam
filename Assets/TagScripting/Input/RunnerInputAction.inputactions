@@ -9,9 +9,10 @@
                     "name": "Tap",
                     "type": "Button",
                     "id": "64fb1087-f389-4dea-bc5e-1006f7ca9f65",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TouchPosition",
@@ -19,7 +20,8 @@
                     "id": "38da8ad7-90a7-4278-9c2f-e8199b2280a4",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "StartDrag",
@@ -27,7 +29,8 @@
                     "id": "3264d228-d785-4e3e-bb95-ed03e3ab3b3d",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press"
+                    "interactions": "Press",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "EndDrag",
@@ -35,7 +38,8 @@
                     "id": "7ad72a25-4548-48b6-aacf-8a51effa8cb0",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "Press(behavior=1)"
+                    "interactions": "Press(behavior=1)",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [

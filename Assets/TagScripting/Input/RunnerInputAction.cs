@@ -95,7 +95,7 @@ public partial class @RunnerInputAction: IInputActionCollection2, IDisposable
                     ""name"": ""Tap"",
                     ""type"": ""Button"",
                     ""id"": ""64fb1087-f389-4dea-bc5e-1006f7ca9f65"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": false
