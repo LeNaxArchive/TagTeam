@@ -12,29 +12,29 @@ public class GameStateInit : GameState
     {
         GameManager.Instance.ChangeCamera(GameCamera.Init);
 
-        hiscoreText.text = "Highscore: " + SaveManager.Instance.save.Highscore.ToString();
-        fishcountText.text = "Fish: " + SaveManager.Instance.save.Fish.ToString();
+        //hiscoreText.text = "Highscore: " + SaveManager.Instance.save.Highscore.ToString();
+        //fishcountText.text = "Fish: " + SaveManager.Instance.save.Fish.ToString();
 
-        menuUI.SetActive(true); 
+        //menuUI.SetActive(true); 
 
-        AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.5f);
+        //AudioManager.Instance.PlayMusicWithXFade(menuLoopMusic, 0.5f);
     }
 
     public override void Destruct()
     {
-        menuUI.SetActive(false);
+        //menuUI.SetActive(false);
     }
 
     public void OnPlayClick()
     {
-        brain.ChangeState(GetComponent<GameStateGame>());
+        //brain.ChangeState(GetComponent<GameStateGame>());
         GameStats.Instance.ResetSession();
         GetComponent<GameStateDeath>().EnableRevive();
     }
 
     public void OnShopClick()
     {
-        brain.ChangeState(GetComponent<GameStateShop>());
+        //brain.ChangeState(GetComponent<GameStateShop>());
     }
 
 

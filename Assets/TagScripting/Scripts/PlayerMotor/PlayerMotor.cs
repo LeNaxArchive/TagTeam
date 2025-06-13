@@ -2,10 +2,10 @@
 
 public class PlayerMotor : MonoBehaviour
 {
-    [HideInInspector] public Vector3 moveVector;
-    [HideInInspector] public float verticalVelocity;
-    [HideInInspector] public bool isGrounded;
-    [HideInInspector] public int currentLane;
+     public Vector3 moveVector;
+     public float verticalVelocity;
+    public bool isGrounded;
+    public int currentLane;
 
     public float distanceInBetweenLanes = 3.0f;
     public float baseRunSpeed = 5.0f;

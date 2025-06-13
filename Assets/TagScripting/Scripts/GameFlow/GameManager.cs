@@ -1,6 +1,5 @@
-﻿using UnityEngine;
-
-using UnityEngine.SocialPlatforms;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public enum GameCamera
@@ -20,45 +19,17 @@ public class GameManager : MonoBehaviour
     public WorldGeneration worldGeneration;
     public SceneChunkGeneration sceneChunkGeneration;
     public GameObject[] cameras;
-    public bool isConnectedToGooglePlayServices;
 
     private GameState state;
-
-    private void Awake()
-    {
-#if UNITY_ANDROID
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
-#endif
-        Debug.Log(Application.persistentDataPath);
-    }
 
     private void Start()
     {
         instance = this;
         state = GetComponent<GameStateInit>();
         state.Construct();
-
-        SignInToGooglePlayServices();
     }
 
-    public void SignInToGooglePlayServices()
-    {
-#if UNITY_ANDROID
-        PlayGamesPlatform.Instance.Authenticate(SignInInteractivity.CanPromptOnce, (result) => {
-            switch (result)
-            {
-                case SignInStatus.Success:
-                    isConnectedToGooglePlayServices = true;
-                    break;
-                default:
-                    isConnectedToGooglePlayServices = false;
-                    break;
-            }
-        });
-#endif
-    }
-
+    
     private void Update()
     {
         state.UpdateState();
